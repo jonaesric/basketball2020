@@ -32,10 +32,24 @@ import java.util.LinkedList;
 import java.util.Optional;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.stream.JsonReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.Writer;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.TimerTask;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javafx.application.Platform;
 
 
 public class Controller {
 
+    String FilePath ="./gamestate.json";
+   
     Sound sound = new Sound();
     Gson gson = new Gson();
     // USEFULL FOR FORMATTING TIME
@@ -112,7 +126,6 @@ public class Controller {
      * Binds every Label to StringProperty of Game instance.
      */
     public void initialize() {
-
 
 
         TIME.textProperty().bind(generator.getTimeFormat(GameTool.timeMillis, !GameTool.getPeriodInfo().isBreak(), GameTool));
@@ -260,6 +273,13 @@ public class Controller {
         AWAY_PLAYER_10_NUMBER.textProperty().bind(GameTool.AWAY_PLAYER_10_NUMBER);
         AWAY_PLAYER_11_NUMBER.textProperty().bind(GameTool.AWAY_PLAYER_11_NUMBER);
         AWAY_PLAYER_12_NUMBER.textProperty().bind(GameTool.AWAY_PLAYER_12_NUMBER);
+        startTimer();
+        try {
+            setGamestateFromJson(returnGameObject());
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(Controller.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
 
     }
 public void PLAYHORNPELIKELLO(){
@@ -1359,4 +1379,111 @@ public void HOME_SCOREMINUS(){
         GameTool.AWAY_TIMEOUTS.setValue("");
         GameTool.HOME_TIMEOUTS.setValue("");
     }
+    
+     public void startTimer() {
+        java.util.Timer t = new java.util.Timer();
+        {
+            TimerTask tt = new TimerTask() {
+                @Override
+                public void run() {
+                    Platform.runLater(() -> {
+                        writeJsonGameState();
+                    });
+
+                }
+            ;
+            }
+    ;  
+t.scheduleAtFixedRate(tt, 10, 10);
+        }
+    }
+
+    private void writeJsonGameState() {
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        GameState gameState = new GameState(GameTool);
+        ArrayList<player> HomePlayerList = new ArrayList();
+        ArrayList<player> AwayPlayerList = new ArrayList();
+        playerList away = new playerList("Away", returnPlayers(AwayPlayerList, GameTool, false));
+        playerList home = new playerList("Home", returnPlayers(HomePlayerList, GameTool, true));
+        gameObject g = new gameObject("Game", gameState, home, away);
+        String game = gson.toJson(g);
+
+        try {
+            Writer writer = new FileWriter(FilePath);
+            writer.write(game);
+            writer.close();
+        } catch (IOException ex) {
+
+            Logger.getLogger(GameState.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+    }
+
+    gameObject returnGameObject() throws FileNotFoundException {
+        JsonReader reader = new JsonReader(new FileReader(FilePath));
+        gameObject data = gson.fromJson(reader, gameObject.class);
+        return data;
+    }
+
+    public ArrayList<player> returnPlayers(ArrayList<player> team, Game G, boolean isHome) {
+        
+        for (int n = 0;n< team.size(); n++) {
+            player p = new player(GameTool.getPlayerName(isHome, n), GameTool.getPlayerNumber(isHome, n), GameTool.getPlayerFouls(isHome, n), GameTool.getPlayerPoints(isHome, n));
+            team.add(p);
+        }
+
+        return team;
+
+    }
+
+    void setGamestateFromJson(gameObject g) {
+        for (int i = 0; i < g.homePlayers.rooster.size(); i++) {
+            GameTool.setPlayerName(g.homePlayers.rooster.get(i).name, true, i);
+            GameTool.setPlayerNumber(g.homePlayers.rooster.get(i).number, true, i);
+            GameTool.setPlayerPoints(g.homePlayers.rooster.get(i).points, true, i);
+            GameTool.setPlayerFouls(g.homePlayers.rooster.get(i).fouls, true, i);
+        }
+
+        for (int i = 0; i < g.awayPlayers.rooster.size(); i++) {
+            GameTool.setPlayerName(g.awayPlayers.rooster.get(i).name, false, i);
+            GameTool.setPlayerNumber(g.awayPlayers.rooster.get(i).number, false, i);
+            GameTool.setPlayerPoints(g.awayPlayers.rooster.get(i).points, false, i);
+            GameTool.setPlayerFouls(g.awayPlayers.rooster.get(i).fouls, false, i);
+        }
+        GameTool.setScore(g.gameState.score);
+        GameTool.AWAY_FOULS.set(g.gameState.awayFouls);
+        GameTool.HOME_FOULS.set(g.gameState.homeFouls);
+        GameTool.AWAY_TIMEOUTS.set(g.gameState.awayTimeouts);
+        GameTool.HOME_TIMEOUTS.set(g.gameState.homeTimeouts);
+        GameTool.timeMillis.set(g.gameState.timePassed);
+        GameTool.PERIOD.set(g.gameState.period);
+    }
+
 }
+
+class gameObject {
+    String name;
+    GameState gameState;
+    playerList homePlayers;
+    playerList awayPlayers;
+
+    gameObject(String n, GameState gamestate, playerList homePlayers, playerList awayPlayers) {
+        this.name = n;
+        this.gameState = gamestate;
+        this.homePlayers = homePlayers;
+        this.awayPlayers = awayPlayers;
+    }
+
+}
+
+class playerList {
+    String name;
+    List<player> rooster;
+    playerList(String name, List<player> rooster) {
+        this.name = name;
+        this.rooster = rooster;
+
+    }
+
+}
+
