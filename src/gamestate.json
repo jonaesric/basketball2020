@@ -1,0 +1,20 @@
+{
+  "name": "Game",
+  "gameState": {
+    "timePassed": 70000,
+    "score": "13-0",
+    "homeFouls": "0",
+    "awayFouls": "4",
+    "homeTimeouts": "",
+    "awayTimeouts": "",
+    "period": "1. PERIOD"
+  },
+  "homePlayers": {
+    "name": "Home",
+    "rooster": []
+  },
+  "awayPlayers": {
+    "name": "Away",
+    "rooster": []
+  }
+}
