@@ -1,20 +1,166 @@
 {
   "name": "Game",
   "gameState": {
-    "timePassed": 70000,
-    "score": "13-0",
-    "homeFouls": "0",
-    "awayFouls": "4",
-    "homeTimeouts": "",
-    "awayTimeouts": "",
-    "period": "1. PERIOD"
+    "timePassed": 537,
+    "score": "55-33",
+    "homeFouls": "2",
+    "awayFouls": "5",
+    "homeTimeouts": "●●",
+    "awayTimeouts": "●●",
+    "period": "WAITING"
   },
   "homePlayers": {
     "name": "Home",
-    "rooster": []
+    "rooster": [
+      {
+        "name": "I. Seppala",
+        "number": "1",
+        "fouls": "",
+        "points": "4"
+      },
+      {
+        "name": "V. Simpson",
+        "number": "2",
+        "fouls": "",
+        "points": "7"
+      },
+      {
+        "name": "A. Diaz",
+        "number": "4",
+        "fouls": "",
+        "points": "2"
+      },
+      {
+        "name": "J. Herrala",
+        "number": "6",
+        "fouls": "",
+        "points": "5"
+      },
+      {
+        "name": "A. Perttu",
+        "number": "7",
+        "fouls": "",
+        "points": "2"
+      },
+      {
+        "name": "T. Huolila",
+        "number": "8",
+        "fouls": "",
+        "points": "4"
+      },
+      {
+        "name": "M. Ojala",
+        "number": "9",
+        "fouls": "",
+        "points": "5"
+      },
+      {
+        "name": "S. Vanttaja",
+        "number": "12",
+        "fouls": "",
+        "points": "0"
+      },
+      {
+        "name": "T. Palmi",
+        "number": "31",
+        "fouls": "",
+        "points": "24"
+      },
+      {
+        "name": "R. Hollis-Jefferson",
+        "number": "32",
+        "fouls": "",
+        "points": "2"
+      },
+      {
+        "name": "",
+        "number": "",
+        "fouls": "",
+        "points": "0"
+      },
+      {
+        "name": "",
+        "number": "",
+        "fouls": "",
+        "points": "0"
+      }
+    ]
   },
   "awayPlayers": {
     "name": "Away",
-    "rooster": []
+    "rooster": [
+      {
+        "name": "T. Golden",
+        "number": "0",
+        "fouls": "",
+        "points": "11"
+      },
+      {
+        "name": "V. Zaryazhko",
+        "number": "2",
+        "fouls": "",
+        "points": "2"
+      },
+      {
+        "name": "A. Ireland",
+        "number": "3",
+        "fouls": "●●●●●●●●●●●●●●",
+        "points": "2"
+      },
+      {
+        "name": "A. Petenev",
+        "number": "9",
+        "fouls": "",
+        "points": "2"
+      },
+      {
+        "name": "N. Mikhailovskii",
+        "number": "10",
+        "fouls": "",
+        "points": "4"
+      },
+      {
+        "name": "P. Buford",
+        "number": "12",
+        "fouls": "",
+        "points": "2"
+      },
+      {
+        "name": "B. Savovic",
+        "number": "14",
+        "fouls": "",
+        "points": "2"
+      },
+      {
+        "name": "T. McLean",
+        "number": "23",
+        "fouls": "",
+        "points": "2"
+      },
+      {
+        "name": "A. Kvitkovskikh",
+        "number": "32",
+        "fouls": "●",
+        "points": "2"
+      },
+      {
+        "name": "A. Zabelin",
+        "number": "35",
+        "fouls": "",
+        "points": "2"
+      },
+      {
+        "name": "D. Kravish",
+        "number": "45",
+        "fouls": "",
+        "points": "2"
+      },
+      {
+        "name": "",
+        "number": "",
+        "fouls": "",
+        "points": "6"
+      }
+    ]
   }
 }
