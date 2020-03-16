@@ -11,8 +11,9 @@ public class GameState {
     String homeTimeouts;
     String awayTimeouts;
     String period;
-
+    int periodi;
     GameState(Game g) {
+        this.periodi = g.getPeriodInfo().getPeriod();
         this.period = g.PERIOD.get();
         this.timePassed = g.timeMillis.get();
         this.score = g.SCORE.get();

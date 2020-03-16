@@ -1,8 +1,24 @@
 {
   "name": "Game",
+  "settings": {
+    "neljanneksenPituus": 30,
+    "neljannesMaara": 4,
+    "jatkoeraPituus": 10,
+    "lyhytTauko": 10,
+    "pitkaTauko": 20,
+    "aikalisa": 5,
+    "aikalisaLkm": 3,
+    "hyokkausAika1": 1,
+    "hyokkausAika2": 1,
+    "virheetLkm": 5,
+    "pelikellonSummeri": 1,
+    "heittokellonSummeri": 1,
+    "kellonSuunta": true,
+    "waitingBeforeStart": 5
+  },
   "gameState": {
-    "timePassed": 537,
-    "score": "55-33",
+    "timePassed": 996,
+    "score": "60-33",
     "homeFouls": "2",
     "awayFouls": "5",
     "homeTimeouts": "●●",
@@ -28,13 +44,13 @@
         "name": "A. Diaz",
         "number": "4",
         "fouls": "",
-        "points": "2"
+        "points": "6"
       },
       {
         "name": "J. Herrala",
         "number": "6",
         "fouls": "",
-        "points": "5"
+        "points": "6"
       },
       {
         "name": "A. Perttu",
@@ -110,13 +126,13 @@
       {
         "name": "A. Petenev",
         "number": "9",
-        "fouls": "",
+        "fouls": "●●●●●●●●●●●●●●●",
         "points": "2"
       },
       {
         "name": "N. Mikhailovskii",
         "number": "10",
-        "fouls": "",
+        "fouls": "●●●",
         "points": "4"
       },
       {
