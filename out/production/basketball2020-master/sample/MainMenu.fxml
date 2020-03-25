@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainMenuAP" maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" styleClass="mainMenuBG" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainMenuController">
+   <stylesheets>
+      <URL value="@koris.css" />
+   </stylesheets>
+   <children>
+      <Button layoutX="291.0" layoutY="235.0" mnemonicParsing="false" onAction="#changeScreenSettingsMenuNewGameButtonPushed" prefHeight="65.0" prefWidth="218.0" text="TULOSTAULU" wrapText="true">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Button>
+      <Button layoutX="291.0" layoutY="338.0" mnemonicParsing="false" onAction="#changeScreenSettingsButtonPushed" prefHeight="65.0" prefWidth="218.0" text="ASETUKSET" wrapText="true">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

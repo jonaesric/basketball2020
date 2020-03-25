@@ -1,0 +1,1731 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="mainwindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#KeyboardListener" prefHeight="1055.0" prefWidth="1718.0" style="-fx-background-color: #707070;" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <GridPane>
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="99.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="1.7976931348623157E308" minHeight="0.0" prefHeight="668.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane prefHeight="567.0" prefWidth="1338.0" GridPane.rowIndex="1">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" percentWidth="35.0" prefWidth="250.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" percentWidth="30.0" prefWidth="571.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" percentWidth="35.0" prefWidth="250.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane layoutX="10.0" layoutY="10.0" prefHeight="626.0" prefWidth="487.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="67.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="162.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="51.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="178.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label fx:id="HOME_PLAYER_1_FOULS" alignment="CENTER" prefHeight="26.0" prefWidth="151.0" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_1_NAME" alignment="CENTER" prefHeight="26.0" prefWidth="221.0" text="I. Virtanen" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_1_NUMBER" alignment="CENTER" prefHeight="26.0" prefWidth="221.0" text="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_1_POINTS" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="221.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="221.0" text="Player" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="System Bold" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="221.0" text="No.">
+                           <font>
+                              <Font name="System Bold" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="221.0" text="Pts." GridPane.columnIndex="3">
+                           <font>
+                              <Font name="System Bold" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="221.0" text="Fouls" GridPane.columnIndex="6">
+                           <font>
+                              <Font name="System Bold" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_3_FOULS" alignment="CENTER" prefHeight="26.0" prefWidth="151.0" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_4_FOULS" alignment="CENTER" prefHeight="26.0" prefWidth="151.0" GridPane.columnIndex="6" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_5_FOULS" alignment="CENTER" prefHeight="26.0" prefWidth="151.0" GridPane.columnIndex="6" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_6_FOULS" alignment="CENTER" prefHeight="26.0" prefWidth="151.0" GridPane.columnIndex="6" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_7_FOULS" alignment="CENTER" prefHeight="26.0" prefWidth="151.0" GridPane.columnIndex="6" GridPane.rowIndex="7">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_8_FOULS" alignment="CENTER" prefHeight="26.0" prefWidth="151.0" GridPane.columnIndex="6" GridPane.rowIndex="8">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_9_FOULS" alignment="CENTER" prefHeight="26.0" prefWidth="151.0" GridPane.columnIndex="6" GridPane.rowIndex="9">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_10_FOULS" alignment="CENTER" prefHeight="26.0" prefWidth="151.0" GridPane.columnIndex="6" GridPane.rowIndex="10">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_11_FOULS" alignment="CENTER" prefHeight="26.0" prefWidth="151.0" GridPane.columnIndex="6" GridPane.rowIndex="11">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_12_FOULS" alignment="CENTER" prefHeight="26.0" prefWidth="151.0" GridPane.columnIndex="6" GridPane.rowIndex="12">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_2_NUMBER" alignment="CENTER" prefHeight="26.0" prefWidth="221.0" text="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_3_NUMBER" alignment="CENTER" prefHeight="26.0" prefWidth="221.0" text="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_4_NUMBER" alignment="CENTER" prefHeight="26.0" prefWidth="221.0" text="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_5_NUMBER" alignment="CENTER" prefHeight="26.0" prefWidth="221.0" text="1" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_6_NUMBER" alignment="CENTER" prefHeight="26.0" prefWidth="221.0" text="1" GridPane.rowIndex="6">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_7_NUMBER" alignment="CENTER" prefHeight="26.0" prefWidth="221.0" text="1" GridPane.rowIndex="7">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_8_NUMBER" alignment="CENTER" prefHeight="26.0" prefWidth="221.0" text="1" GridPane.rowIndex="8">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_9_NUMBER" alignment="CENTER" prefHeight="26.0" prefWidth="221.0" text="1" GridPane.rowIndex="9">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_10_NUMBER" alignment="CENTER" prefHeight="26.0" prefWidth="221.0" text="1" GridPane.rowIndex="10">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                           <Label fx:id="HOME_PLAYER_11_NUMBER" alignment="CENTER" prefHeight="26.0" prefWidth="221.0" text="1" GridPane.rowIndex="11">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_12_NUMBER" alignment="CENTER" prefHeight="26.0" prefWidth="221.0" text="1" GridPane.rowIndex="12">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_2_NAME" alignment="CENTER" prefHeight="26.0" prefWidth="221.0" text="I. Virtanen" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_3_NAME" alignment="CENTER" prefHeight="26.0" prefWidth="221.0" text="I. Virtanen" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_4_NAME" alignment="CENTER" prefHeight="26.0" prefWidth="221.0" text="I. Virtanen" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_5_NAME" alignment="CENTER" prefHeight="26.0" prefWidth="221.0" text="I. Virtanen" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_6_NAME" alignment="CENTER" prefHeight="26.0" prefWidth="221.0" text="I. Virtanen" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_7_NAME" alignment="CENTER" prefHeight="26.0" prefWidth="221.0" text="I. Virtanen" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_8_NAME" alignment="CENTER" prefHeight="26.0" prefWidth="221.0" text="I. Virtanen" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_9_NAME" alignment="CENTER" prefHeight="26.0" prefWidth="221.0" text="I. Virtanen" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_10_NAME" alignment="CENTER" prefHeight="26.0" prefWidth="221.0" text="I. Virtanen" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_12_NAME" alignment="CENTER" prefHeight="26.0" prefWidth="221.0" text="I. Virtanen" GridPane.columnIndex="1" GridPane.rowIndex="12">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_11_NAME" alignment="CENTER" prefHeight="26.0" prefWidth="221.0" text="I. Virtanen" GridPane.columnIndex="1" GridPane.rowIndex="11">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_2_POINTS" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="221.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_3_POINTS" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="221.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_4_POINTS" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="221.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_5_POINTS" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="221.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_6_POINTS" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="221.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_7_POINTS" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="221.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="7">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_8_POINTS" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="221.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="8">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_10_POINTS" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="221.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="10">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_9_POINTS" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="221.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="9">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_12_POINTS" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="221.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="12">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="HOME_PLAYER_11_POINTS" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="221.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="11">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="61.0" prefWidth="155.0" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                           <children>
+                              <Label fx:id="HOME_PLAYER_1_FOULS" maxHeight="61.0" prefHeight="61.0" textFill="#f5f843">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="HOME_PLAYER_1_RED_FOUL" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="61.0" textFill="RED">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="12">
+                           <children>
+                              <Label fx:id="HOME_PLAYER_12_FOULS" maxHeight="61.0" prefHeight="61.0" textFill="#f5f843">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="HOME_PLAYER_12_RED_FOUL" prefHeight="61.0" textFill="RED">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="7">
+                           <children>
+                              <Label fx:id="HOME_PLAYER_7_FOULS" maxHeight="61.0" prefHeight="61.0" textFill="#f5f843">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="HOME_PLAYER_7_RED_FOUL" prefHeight="61.0" textFill="RED">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="8">
+                           <children>
+                              <Label fx:id="HOME_PLAYER_8_FOULS" maxHeight="61.0" prefHeight="61.0" textFill="#f5f843">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="HOME_PLAYER_8_RED_FOUL" prefHeight="61.0" textFill="RED">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="9">
+                           <children>
+                              <Label fx:id="HOME_PLAYER_9_FOULS" maxHeight="61.0" prefHeight="61.0" textFill="#f5f843">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="HOME_PLAYER_9_RED_FOUL" prefHeight="61.0" textFill="RED">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="10">
+                             <children>
+                              <Label fx:id="HOME_PLAYER_10_FOULS" maxHeight="61.0" prefHeight="61.0" textFill="#f5f843">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="HOME_PLAYER_10_RED_FOUL" prefHeight="61.0" textFill="RED">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="11">
+                           <children>
+                              <Label fx:id="HOME_PLAYER_1_RED_FOULS" maxHeight="61.0" prefHeight="61.0" textFill="#f5f843">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="HOME_PLAYER_11_RED_FOUL" prefHeight="61.0" textFill="RED">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="4">
+                           <children>
+                              <Label fx:id="HOME_PLAYER_4_FOULS" maxHeight="61.0" prefHeight="61.0" textFill="#f5f843">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="HOME_PLAYER_4_RED_FOUL" prefHeight="61.0" textFill="RED">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                           <children>
+                              <Label fx:id="HOME_PLAYER_2_FOULS" maxHeight="61.0" prefHeight="61.0" textFill="#f5f843">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="HOME_PLAYER_2_RED_FOUL" prefHeight="61.0" textFill="RED">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                           <children>
+                              <Label fx:id="HOME_PLAYER_3_FOULS" maxHeight="61.0" prefHeight="61.0" textFill="#f5f843">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="HOME_PLAYER_3_RED_FOUL" prefHeight="61.0" textFill="RED">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="5">
+                           <children>
+                              <Label fx:id="HOME_PLAYER_5_FOULS" maxHeight="61.0" prefHeight="61.0" textFill="#f5f843">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="HOME_PLAYER_5_RED_FOUL" prefHeight="61.0" textFill="RED">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="6">
+                           <Label fx:id="HOME_PLAYER_6_FOULS" maxHeight="61.0" prefHeight="61.0" textFill="#f5f843">
+                              <font>
+                                 <Font name="System Bold" size="25.0" />
+                              </font>
+                           </Label>
+                           <Label fx:id="HOME_PLAYER_6_RED_FOUL" prefHeight="61.0" textFill="RED">
+                              <font>
+                                 <Font name="System Bold" size="25.0" />
+                              </font>
+                           </Label>
+                        </HBox>
+                        <Button fx:id="HOME_PLAYER_1_FOULSPLUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_1_FOULSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="+" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_1_FOULSMINUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_1_FOULSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_2_FOULSPLUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_2_FOULSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="+" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_2_FOULSMINUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_2_FOULSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_3_FOULSPLUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_3_FOULSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="+" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_3_FOULSMINUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_3_FOULSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_4_FOULSPLUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_4_FOULSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="+" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="4">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_4_FOULSMINUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_4_FOULSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_5_FOULSPLUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_5_FOULSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="+" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="5">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_5_FOULSMINUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_5_FOULSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_6_FOULSPLUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_6_FOULSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="+" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="6">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_6_FOULSMINUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_6_FOULSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="6">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_7_FOULSPLUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_7_FOULSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="+" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="7">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_7_FOULSMINUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_7_FOULSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="7">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_8_FOULSPLUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_8_FOULSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="+" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="8">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_8_FOULSMINUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_8_FOULSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="8">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_9_FOULSPLUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_9_FOULSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="+" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="9">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_9_FOULSMINUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_9_FOULSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="9">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_10_FOULSPLUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_10_FOULSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="+" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="10">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_10_FOULSMINUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_10_FOULSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="10">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_11_FOULSPLUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_11_FOULSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="+" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="11">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_11_FOULSMINUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_11_FOULSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="11">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_12_FOULSPLUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_12_FOULSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="+" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="12">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_12_FOULSMINUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_12_FOULSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="12">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_1_SCOREMINUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_1_POINTSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_1_SCOREPLUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_1_POINTSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="+" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_2_SCOREMINUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_2_POINTSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_2_SCOREPLUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_2_POINTSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="+" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_3_SCOREMINUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_3_POINTSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_3_SCOREPLUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_3_POINTSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="+" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_4_SCOREMINUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_4_POINTSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_4_SCOREPLUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_4_POINTSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="+" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_5_SCOREMINUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_5_POINTSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_5_SCOREPLUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_5_POINTSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="+" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_6_SCOREMINUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_6_POINTSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_6_SCOREPLUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_6_POINTSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="+" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_7_SCOREMINUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_7_POINTSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_7_SCOREPLUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_7_POINTSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="+" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="7">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_8_SCOREMINUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_8_POINTSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_8_SCOREPLUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_8_POINTSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="+" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="8">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_9_SCOREMINUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_9_POINTSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_9_SCOREPLUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_9_POINTSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="+" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="9">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_10_SCOREMINUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_10_POINTSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="10">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_10_SCOREPLUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_10_POINTSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="+" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="10">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_11_SCOREMINUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_11_POINTSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="11">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_11_SCOREPLUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_11_POINTSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="+" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="11">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_12_SCOREMINUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_12_POINTSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="12">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HOME_PLAYER_12_SCOREPLUS" alignment="TOP_CENTER" contentDisplay="TOP" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_PLAYER_12_POINTSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="+" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="12">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="-" GridPane.columnIndex="2">
+                           <font>
+                              <Font name="System Bold" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="+" GridPane.columnIndex="4">
+                           <font>
+                              <Font name="System Bold" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="-" GridPane.columnIndex="5">
+                           <font>
+                              <Font name="System Bold" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="+" GridPane.columnIndex="7">
+                           <font>
+                              <Font name="System Bold" size="32.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                     <children>
+                        <Label fx:id="TIME" alignment="CENTER" prefHeight="137.0" prefWidth="541.0" style="-fx-text-fill: black;" text="00:10" textFill="#f5f843">
+                           <font>
+                              <Font size="93.0" />
+                           </font>
+                        </Label>
+                        <GridPane>
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Button fx:id="START_BTN" focusTraversable="false" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#START" prefHeight="30.0" prefWidth="337.0" style="-fx-text-fill: black;" text="START" textAlignment="CENTER" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></Button>
+                              <Button fx:id="PAUSE_BTN" focusTraversable="false" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#PAUSE" prefHeight="30.0" prefWidth="354.0" style="-fx-text-fill: black;" text="PAUSE/CONTINUE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></Button>
+                           </children>
+                        </GridPane>
+                        <Label fx:id="PERIOD" alignment="CENTER" prefHeight="167.0" prefWidth="887.0" style="-fx-text-fill: black;" text="" textFill="#f5f843">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="30.0" />
+                           </VBox.margin>
+                        </Label>
+                        <HBox prefHeight="455.0" prefWidth="516.0">
+                           <children>
+                              <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="548.0">
+                                 <children>
+                                    <Label fx:id="HOME_TIMEOUTS" alignment="CENTER" layoutX="2.0" layoutY="64.0" maxWidth="1.7976931348623157E308" prefHeight="85.0" prefWidth="238.0" textFill="#f5f843">
+                                       <font>
+                                          <Font name="System Bold" size="48.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="game_time21131111" alignment="CENTER" prefHeight="78.0" prefWidth="238.0" style="-fx-text-fill: black;" text="TIMEOUTS" textFill="#f5f843">
+                                       <font>
+                                          <Font size="47.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="game_time211311111" alignment="CENTER" layoutY="202.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="78.0" prefWidth="238.0" style="-fx-text-fill: black;" text="FOULS" textFill="#f5f843">
+                                       <font>
+                                          <Font name="College Condensed" size="64.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="HOME_FOULS" alignment="CENTER" layoutX="63.0" layoutY="277.0" prefHeight="176.0" prefWidth="112.0" style="-fx-text-fill: black;" text="0" textFill="#f5f843">
+                                       <font>
+                                          <Font name="College Condensed" size="120.0" />
+                                       </font>
+                                       <effect>
+                                          <Glow />
+                                       </effect>
+                                    </Label>
+                                    <Button focusTraversable="false" layoutX="22.0" layoutY="158.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_TIMEOUTMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12; -fx-text-fill: black;" text="-">
+                                       <font>
+                                          <Font name="System Bold" size="25.0" />
+                                       </font></Button>
+                                    <Button fx:id="HOME_TIMEOUT" focusTraversable="false" layoutX="179.0" layoutY="158.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_TIMEOUT" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12; -fx-text-fill: black;" text="+">
+                                       <font>
+                                          <Font name="System Bold" size="25.0" />
+                                       </font></Button>
+                                    <Button focusTraversable="false" layoutX="22.0" layoutY="402.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_FOULMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12; -fx-text-fill: black;" text="-">
+                                       <font>
+                                          <Font name="System Bold" size="25.0" />
+                                       </font></Button>
+                                    <Button fx:id="HOME_FOULPLUS" focusTraversable="false" layoutX="179.0" layoutY="402.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_FOUL" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12; -fx-text-fill: black;" text="+">
+                                       <font>
+                                          <Font name="System Bold" size="25.0" />
+                                       </font></Button>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                              </Pane>
+                              <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="548.0">
+                                 <children>
+                                    <Button focusTraversable="false" layoutX="14.0" layoutY="402.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_FOULMINUS" pickOnBounds="false" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12; -fx-text-fill: black;" text="-">
+                                       <font>
+                                          <Font name="System Bold" size="25.0" />
+                                       </font>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </Button>
+                                    <Label fx:id="game_time21131111" alignment="CENTER" layoutY="208.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="78.0" prefWidth="238.0" style="-fx-text-fill: black;" text="FOULS" textFill="#f5f843">
+                                       <font>
+                                          <Font name="College Condensed" size="64.0" />
+                                       </font>
+                                    </Label>
+                                    <Button focusTraversable="false" layoutX="14.0" layoutY="158.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_TIMEOUTMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12; -fx-text-fill: black;" text="-">
+                                       <font>
+                                          <Font name="System Bold" size="25.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="AWAY_TIMEOUT" focusTraversable="false" layoutX="203.0" layoutY="158.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_TIMEOUT" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12; -fx-text-fill: black;" text="+">
+                                       <font>
+                                          <Font name="System Bold" size="25.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="AWAY_FOULPLUS" focusTraversable="false" layoutX="203.0" layoutY="402.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_FOUL" pickOnBounds="false" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12; -fx-text-fill: black;" text="+">
+                                       <font>
+                                          <Font name="System Bold" size="25.0" />
+                                       </font>
+                                    </Button>
+                                    <Label fx:id="game_time2113111" alignment="CENTER" layoutX="6.0" prefHeight="78.0" prefWidth="238.0" style="-fx-text-fill: black;" text="TIMEOUTS" textFill="#f5f843">
+                                       <font>
+                                          <Font size="47.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="AWAY_FOULS" alignment="CENTER" layoutX="55.0" layoutY="277.0" prefHeight="176.0" prefWidth="128.0" style="-fx-text-fill: black;" text="0" textFill="#f5f843">
+                                       <font>
+                                          <Font name="College Condensed" size="120.0" />
+                                       </font>
+                                       <effect>
+                                          <Glow />
+                                       </effect>
+                                    </Label>
+                                    <Label fx:id="AWAY_TIMEOUTS" alignment="CENTER" layoutX="6.0" layoutY="64.0" prefHeight="85.0" prefWidth="238.0" textFill="#f5f843">
+                                       <font>
+                                          <Font name="System Bold" size="48.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <GridPane maxHeight="1.7976931348623157E308" GridPane.columnIndex="2" GridPane.hgrow="SOMETIMES" GridPane.vgrow="SOMETIMES">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="50.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="178.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="50.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="50.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="51.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="50.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="162.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="67.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="AWAY_PLAYER_1_NUMBER" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="63.0" prefWidth="74.0" text="1" GridPane.columnIndex="7" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="No." GridPane.columnIndex="7">
+                           <font>
+                              <Font name="System Bold" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="AWAY_PLAYER_2_NUMBER" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="1" GridPane.columnIndex="7" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="AWAY_PLAYER_3_NUMBER" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="1" GridPane.columnIndex="7" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="AWAY_PLAYER_4_NUMBER" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="1" GridPane.columnIndex="7" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="AWAY_PLAYER_5_NUMBER" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="1" GridPane.columnIndex="7" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="AWAY_PLAYER_6_NUMBER" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="1" GridPane.columnIndex="7" GridPane.rowIndex="6">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="AWAY_PLAYER_7_NUMBER" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="1" GridPane.columnIndex="7" GridPane.rowIndex="7">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="AWAY_PLAYER_8_NUMBER" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="1" GridPane.columnIndex="7" GridPane.rowIndex="8">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="AWAY_PLAYER_9_NUMBER" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="1" GridPane.columnIndex="7" GridPane.rowIndex="9">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="AWAY_PLAYER_10_NUMBER" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="1" GridPane.columnIndex="7" GridPane.rowIndex="10">
+                              <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="AWAY_PLAYER_11_NUMBER" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="1" GridPane.columnIndex="7" GridPane.rowIndex="11">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="AWAY_PLAYER_12_NUMBER" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="1" GridPane.columnIndex="7" GridPane.rowIndex="12">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="AWAY_PLAYER_1_SCOREPLUS" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_1_POINTSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="+" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_2_SCOREPLUS" alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_2_POINTSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="+" textAlignment="JUSTIFY" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_3_SCOREPLUS" alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_3_POINTSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12; -fx-text-fill: black;" text="+" textFill="#070707" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_4_SCOREPLUS" alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_4_POINTSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="+" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_5_SCOREPLUS" alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_5_POINTSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="+" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_6_SCOREPLUS" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_6_POINTSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="+" GridPane.columnIndex="5" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_7_SCOREPLUS" alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_7_POINTSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="+" GridPane.columnIndex="5" GridPane.rowIndex="7">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_8_SCOREPLUS" alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_8_POINTSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" stylesheets="@styles.css" text="+" GridPane.columnIndex="5" GridPane.rowIndex="8">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_9_SCOREPLUS" alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_9_POINTSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="+" GridPane.columnIndex="5" GridPane.rowIndex="9">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_10_SCOREPLUS" alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_10_POINTSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="+" GridPane.columnIndex="5" GridPane.rowIndex="10">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_11_SCOREPLUS" alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_11_POINTSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="+" GridPane.columnIndex="5" GridPane.rowIndex="11">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_12_SCOREPLUS" alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_12_POINTSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="+" GridPane.columnIndex="5" GridPane.rowIndex="12">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_1_FOULSMINUS" alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_1_FOULSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="AWAY_PLAYER_2_FOULSMINUS" alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_2_FOULSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12; -fx-text-fill: black;" text="-" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_3_FOULSMINUS" alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_3_FOULSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_4_FOULSMINUS" alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_4_FOULSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_5_FOULSMINUS" alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_5_FOULSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_6_FOULSMINUS" alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_6_FOULSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_7_FOULSMINUS" alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_7_FOULSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" GridPane.rowIndex="7">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_8_FOULSMINUS" alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_8_FOULSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" GridPane.rowIndex="8">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_9_FOULSMINUS" alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_9_FOULSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" GridPane.rowIndex="9">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_10_FOULSMINUS" alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_10_FOULSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" GridPane.rowIndex="10">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_11_FOULSMINUS" alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_11_FOULSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" GridPane.rowIndex="11">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_12_FOULSMINUS" alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_12_FOULSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" text="-" GridPane.rowIndex="12">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Label fx:id="AWAY_PLAYER_1_NAME" alignment="CENTER" text="Jaska Jokunen" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="AWAY_PLAYER_2_NAME" alignment="CENTER" text="Jaska Jokunen" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="AWAY_PLAYER_3_NAME" alignment="CENTER" text="Jaska Jokunen" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="AWAY_PLAYER_4_NAME" alignment="CENTER" text="Jaska Jokunen" GridPane.columnIndex="6" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="AWAY_PLAYER_5_NAME" alignment="CENTER" text="Jaska Jokunen" GridPane.columnIndex="6" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="AWAY_PLAYER_6_NAME" alignment="CENTER" text="Jaska Jokunen" GridPane.columnIndex="6" GridPane.rowIndex="6">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="AWAY_PLAYER_7_NAME" alignment="CENTER" text="Jaska Jokunen" GridPane.columnIndex="6" GridPane.rowIndex="7">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="AWAY_PLAYER_8_NAME" alignment="CENTER" text="Jaska Jokunen" GridPane.columnIndex="6" GridPane.rowIndex="8">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="AWAY_PLAYER_9_NAME" alignment="CENTER" text="Jaska Jokunen" GridPane.columnIndex="6" GridPane.rowIndex="9">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="AWAY_PLAYER_10_NAME" alignment="CENTER" text="Jaska Jokunen" GridPane.columnIndex="6" GridPane.rowIndex="10">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="AWAY_PLAYER_11_NAME" alignment="CENTER" text="Jaska Jokunen" GridPane.columnIndex="6" GridPane.rowIndex="11">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="AWAY_PLAYER_12_NAME" alignment="CENTER" text="Jaska Jokunen" GridPane.columnIndex="6" GridPane.rowIndex="12">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Player" GridPane.columnIndex="6">
+                           <font>
+                              <Font name="System Bold" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="81.0" prefWidth="38.0" text="+" GridPane.columnIndex="5">
+                           <font>
+                              <Font name="System Bold" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Pts." GridPane.columnIndex="4">
+                           <font>
+                              <Font name="System Bold" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="AWAY_PLAYER_1_POINTS" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="AWAY_PLAYER_2_POINTS" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="AWAY_PLAYER_3_POINTS" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="0" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="AWAY_PLAYER_4_POINTS" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="0" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="AWAY_PLAYER_5_POINTS" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="0" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="AWAY_PLAYER_6_POINTS" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="0" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="AWAY_PLAYER_7_POINTS" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="0" GridPane.columnIndex="4" GridPane.rowIndex="7">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="AWAY_PLAYER_8_POINTS" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="0" GridPane.columnIndex="4" GridPane.rowIndex="8">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="AWAY_PLAYER_9_POINTS" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="0" GridPane.columnIndex="4" GridPane.rowIndex="9">
+                            <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="AWAY_PLAYER_10_POINTS" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="0" GridPane.columnIndex="4" GridPane.rowIndex="10">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                              </Label>
+                        <Label fx:id="AWAY_PLAYER_11_POINTS" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="0" GridPane.columnIndex="4" GridPane.rowIndex="11">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="AWAY_PLAYER_12_POINTS" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="0" GridPane.columnIndex="4" GridPane.rowIndex="12">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="AWAY_PLAYER_1_SCOREMINUS" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_1_POINTSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" stylesheets="@styles.css" text="-" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_2_SCOREMINUS" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_2_POINTSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" stylesheets="@styles.css" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_3_SCOREMINUS" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_3_POINTSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" stylesheets="@styles.css" text="-" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_4_SCOREMINUS" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_4_POINTSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" stylesheets="@styles.css" text="-" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_5_SCOREMINUS" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_5_POINTSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" stylesheets="@styles.css" text="-" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_6_SCOREMINUS" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_6_POINTSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" stylesheets="@styles.css" text="-" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_7_SCOREMINUS" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_7_POINTSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" stylesheets="@styles.css" text="-" GridPane.columnIndex="3" GridPane.rowIndex="7">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_8_SCOREMINUS" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_8_POINTSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" stylesheets="@styles.css" text="-" GridPane.columnIndex="3" GridPane.rowIndex="8">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_9_SCOREMINUS" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_9_POINTSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" stylesheets="@styles.css" text="-" GridPane.columnIndex="3" GridPane.rowIndex="9">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_10_SCOREMINUS" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_10_POINTSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" stylesheets="@styles.css" text="-" GridPane.columnIndex="3" GridPane.rowIndex="10">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_11_SCOREMINUS" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_11_POINTSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" stylesheets="@styles.css" text="-" GridPane.columnIndex="3" GridPane.rowIndex="11">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_12_SCOREMINUS" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_12_POINTSMINUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" stylesheets="@styles.css" text="-" GridPane.columnIndex="3" GridPane.rowIndex="12">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_1_FOULSPLUS" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_1_FOULSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" stylesheets="@styles.css" text="+" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_2_FOULSPLUS" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_2_FOULSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" stylesheets="@styles.css" text="+" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_3_FOULSPLUS" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_3_FOULSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" stylesheets="@styles.css" text="+" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_4_FOULSPLUS" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_4_FOULSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" stylesheets="@styles.css" text="+" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_5_FOULSPLUS" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_5_FOULSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" stylesheets="@styles.css" text="+" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_6_FOULSPLUS" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_6_FOULSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" stylesheets="@styles.css" text="+" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_7_FOULSPLUS" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_7_FOULSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" stylesheets="@styles.css" text="+" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_8_FOULSPLUS" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_8_FOULSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" stylesheets="@styles.css" text="+" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_9_FOULSPLUS" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_9_FOULSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" stylesheets="@styles.css" text="+" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_10_FOULSPLUS" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_10_FOULSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" stylesheets="@styles.css" text="+" GridPane.columnIndex="2" GridPane.rowIndex="10">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_11_FOULSPLUS" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_11_FOULSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" stylesheets="@styles.css" text="+" GridPane.columnIndex="2" GridPane.rowIndex="11">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_PLAYER_12_FOULSPLUS" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_PLAYER_12_FOULSPLUS" prefHeight="30.0" prefWidth="45.0" style="-fx-label-padding: -12;" stylesheets="@styles.css" text="+" GridPane.columnIndex="2" GridPane.rowIndex="12">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font></Button>
+                        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="81.0" prefWidth="62.0" text="-" GridPane.columnIndex="3">
+                           <font>
+                              <Font name="System Bold" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="+" GridPane.columnIndex="2">
+                           <font>
+                                  <Font name="System Bold" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Fouls" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="System Bold" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="-">
+                           <font>
+                              <Font name="System Bold" size="32.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="63.0" prefWidth="156.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <Label fx:id="AWAY_PLAYER_1_RED_FOUL" contentDisplay="RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="61.0" textFill="RED">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="AWAY_PLAYER_1_FOULS" alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxHeight="61.0" prefHeight="61.0" textFill="#f5f843">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="63.0" prefWidth="41.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <children>
+                              <Label fx:id="AWAY_PLAYER_2_RED_FOUL" contentDisplay="RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="61.0" textFill="RED">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="AWAY_PLAYER_2_FOULS" alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="61.0" textFill="#f5f843">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <children>
+                              <Label fx:id="AWAY_PLAYER_3_RED_FOUL" contentDisplay="RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="61.0" textFill="RED">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="AWAY_PLAYER_3_FOULS" alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="61.0" textFill="#f5f843">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <children>
+                              <Label fx:id="AWAY_PLAYER_4_RED_FOUL" contentDisplay="RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="61.0" textFill="RED">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="AWAY_PLAYER_4_FOULS" alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="61.0" textFill="#f5f843">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <children>
+                              <Label fx:id="AWAY_PLAYER_5_RED_FOUL" contentDisplay="RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="61.0" textFill="RED">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="AWAY_PLAYER_5_FOULS" alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="61.0" textFill="#f5f843">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                           <children>
+                              <Label fx:id="AWAY_PLAYER_6_RED_FOUL" contentDisplay="RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="61.0" textFill="RED">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="AWAY_PLAYER_6_FOULS" alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="61.0" textFill="#f5f843">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                           <children>
+                              <Label fx:id="AWAY_PLAYER_7_RED_FOUL" contentDisplay="RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="61.0" textFill="RED">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="AWAY_PLAYER_7_FOULS" alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="61.0" textFill="#f5f843">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                           <children>
+                              <Label fx:id="AWAY_PLAYER_8_RED_FOUL" contentDisplay="RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="61.0" textFill="RED">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="AWAY_PLAYER_8_FOULS" alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="61.0" textFill="#f5f843">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                           <children>
+                              <Label fx:id="AWAY_PLAYER_9_RED_FOUL" contentDisplay="RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="61.0" textFill="RED">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="AWAY_PLAYER_9_FOULS" alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="61.0" textFill="#f5f843">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                           <children>
+                              <Label fx:id="AWAY_PLAYER_10_RED_FOUL" contentDisplay="RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="61.0" textFill="RED">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="AWAY_PLAYER_10_FOULS" alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="61.0" textFill="#f5f843">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="11">
+                           <children>
+                              <Label fx:id="AWAY_PLAYER_11_RED_FOUL" contentDisplay="RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="61.0" textFill="RED">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="AWAY_PLAYER_11_FOULS" alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="61.0" textFill="#f5f843">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                             </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="12">
+                           <children>
+                              <Label fx:id="AWAY_PLAYER_12_RED_FOUL" contentDisplay="RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="61.0" textFill="RED">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="AWAY_PLAYER_12_FOULS" alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="61.0" textFill="#f5f843">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+            <GridPane prefHeight="208.0" prefWidth="1711.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" percentWidth="30.0" prefWidth="400.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" percentWidth="40.0" prefWidth="511.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" percentWidth="30.0" prefWidth="400.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <HBox GridPane.columnIndex="1">
+                     <children>
+                        <Button fx:id="HOME_SCOREMINUS" focusTraversable="false" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_SCOREMINUS" prefHeight="50.0" prefWidth="50.0" text="-1">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin></Button>
+                        <Button fx:id="HOME_1_POINT" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_1_POINT" prefHeight="50.0" prefWidth="50.0" style="-fx-label-padding: -12; -fx-text-fill: black;" text="+1">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="HOME_2_POINTS" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_2_POINTS" prefHeight="50.0" prefWidth="50.0" style="-fx-label-padding: -12; -fx-text-fill: black;" text="+2">
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="19.0" />
+                           </font></Button>
+                        <Button fx:id="HOME_3_POINTS" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HOME_3_POINTS" prefHeight="50.0" prefWidth="50.0" style="-fx-label-padding: -12; -fx-text-fill: black;" text="+3">
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="19.0" />
+                           </font></Button>
+                        <Label fx:id="SCORE" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="265.0" prefWidth="562.0" style="-fx-text-fill: black;" text="0-0" textFill="#f5f843" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="96.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="AWAY_SCOREMINUS" focusTraversable="false" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_SCOREMINUS" prefHeight="50.0" prefWidth="50.0" text="-1">
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="AWAY_1_POINT" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_1_POINT" prefHeight="50.0" prefWidth="50.0" style="-fx-label-padding: -12; -fx-text-fill: black;" text="+1">
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="19.0" />
+                           </font></Button>
+                        <Button fx:id="AWAY_2_POINTS" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_2_POINTS" prefHeight="50.0" prefWidth="50.0" style="-fx-label-padding: -12; -fx-text-fill: black;" text="+2">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="AWAY_3_POINTS" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AWAY_3_POINTS" prefHeight="50.0" prefWidth="50.0" style="-fx-label-padding: -12; -fx-text-fill: black;" text="+3">
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="19.0" />
+                           </font></Button>
+                     </children>
+                  </HBox>
+                  <Pane fx:id="HOME_TEAM_LOGO" minHeight="-Infinity" prefHeight="0.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="resetBtn" focusTraversable="false" layoutY="1.0" mnemonicParsing="false" onAction="#resetAlert" text="reset" />
+                        <Button fx:id="PELIKELLOSUMMERI" focusTraversable="false" layoutX="42.0" layoutY="1.0" mnemonicParsing="false" onAction="#PLAYHORNPELIKELLO" text="Pelikello" />
+                        <Button fx:id="HEITTOKELLOSUMMERI" focusTraversable="false" layoutX="102.0" layoutY="1.0" mnemonicParsing="false" onAction="#PLAYHORNHEITOKELLO" text="Heittokello" />
+                     </children></Pane>
+                  <Pane fx:id="AWAY_TEAM_LOGO" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="205.0" prefWidth="515.0" GridPane.columnIndex="2" />
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+   <effect>
+      <Glow level="0.51" />
+   </effect>
+</GridPane>

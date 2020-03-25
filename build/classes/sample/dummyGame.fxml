@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600" prefWidth="800" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SettingsMenuNewGameController">
+   <children>
+      <TilePane prefHeight="200.0" prefWidth="200.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="247.0" layoutY="266.0" text="VANHA PELI :D" wrapText="true" AnchorPane.bottomAnchor="266.0" AnchorPane.leftAnchor="247.0" AnchorPane.rightAnchor="247.0" AnchorPane.topAnchor="266.0">
+         <font>
+            <Font size="46.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

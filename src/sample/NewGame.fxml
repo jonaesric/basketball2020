@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="810.0" maxWidth="802.0" minHeight="600.0" minWidth="800.0" prefHeight="810.0" prefWidth="802.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.NewGame">
+   <children>
+      <Button fx:id="startNewGameBtn" layoutX="343.0" layoutY="746.0" mnemonicParsing="false" onAction="#startNewGame" prefHeight="39.0" prefWidth="117.0" text="ALOITA PELI" />
+      <Button fx:id="newGameBackBtn" layoutX="14.0" layoutY="24.0" mnemonicParsing="false" onAction="#changeScreenSettingsMenuNewGameButtonPushed" prefHeight="39.0" prefWidth="88.0" text="TAKAISIN" />
+      <Pane fx:id="joukkue2Drop" layoutX="487.0" layoutY="736.0" onDragDropped="#handleDropGuest" onDragOver="#handleDragOver" prefHeight="60.0" prefWidth="215.0" style="-fx-background-color: lightgray">
+         <children>
+            <Label layoutX="45.0" layoutY="22.0" prefHeight="17.0" prefWidth="126.0" text="Drop a player file here" />
+         </children></Pane>
+      <Pane fx:id="joukkue1Drop" layoutX="103.0" layoutY="735.0" onDragDropped="#handleDropHome" onDragOver="#handleDragOver" prefHeight="60.0" prefWidth="215.0" style="-fx-background-color: lightgray">
+         <children>
+            <Label layoutX="45.0" layoutY="22.0" prefHeight="17.0" prefWidth="126.0" text="Drop a player file here" />
+         </children></Pane>
+      <SplitPane dividerPositions="0.49667774086378735" layoutX="102.0" layoutY="340.0" maxHeight="385.0" maxWidth="600.0" minHeight="385.0" minWidth="600.0" prefHeight="385.0" prefWidth="600.0">
+         <items>
+            <GridPane maxHeight="385.0" maxWidth="298.0" minHeight="385.0" minWidth="298.0" prefHeight="385.0" prefWidth="224.0">
+               <columnConstraints>
+                  <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="221.0" minWidth="221.0" prefWidth="221.0" />
+                  <ColumnConstraints fillWidth="false" halignment="LEFT" hgrow="SOMETIMES" maxWidth="65.0" minWidth="65.0" prefWidth="65.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextField fx:id="HOME_PLAYER_1_NAME" alignment="CENTER" maxWidth="215.0" minWidth="215.0" prefHeight="25.0" prefWidth="215.0" GridPane.halignment="RIGHT">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="HOME_PLAYER_1_NUMBER" alignment="CENTER" maxHeight="25.0" maxWidth="70.0" minHeight="25.0" minWidth="70.0" prefHeight="25.0" prefWidth="70.0" GridPane.columnIndex="1" GridPane.halignment="LEFT">
+                     <GridPane.margin>
+                        <Insets left="3.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="HOME_PLAYER_2_NAME" alignment="CENTER" layoutX="10.0" layoutY="13.0" maxWidth="215.0" minWidth="215.0" prefHeight="25.0" prefWidth="215.0" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+                  <TextField fx:id="HOME_PLAYER_3_NAME" alignment="CENTER" layoutX="10.0" layoutY="43.0" maxWidth="215.0" minWidth="215.0" prefHeight="25.0" prefWidth="215.0" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+                  <TextField fx:id="HOME_PLAYER_4_NAME" alignment="CENTER" layoutX="10.0" layoutY="73.0" maxWidth="215.0" minWidth="215.0" prefHeight="25.0" prefWidth="215.0" GridPane.rowIndex="3" />
+                  <TextField fx:id="HOME_PLAYER_5_NAME" alignment="CENTER" layoutX="10.0" layoutY="103.0" maxWidth="215.0" minWidth="215.0" prefHeight="25.0" prefWidth="215.0" GridPane.rowIndex="4" />
+                  <TextField fx:id="HOME_PLAYER_6_NAME" alignment="CENTER" layoutX="10.0" layoutY="133.0" maxWidth="215.0" minWidth="215.0" prefHeight="25.0" prefWidth="215.0" GridPane.rowIndex="5" />
+                  <TextField fx:id="HOME_PLAYER_7_NAME" alignment="CENTER" layoutX="10.0" layoutY="163.0" maxWidth="215.0" minWidth="215.0" prefHeight="25.0" prefWidth="215.0" GridPane.rowIndex="6" />
+                  <TextField fx:id="HOME_PLAYER_8_NAME" alignment="CENTER" layoutX="10.0" layoutY="193.0" maxWidth="215.0" minWidth="215.0" prefHeight="25.0" prefWidth="215.0" GridPane.rowIndex="7" />
+                  <TextField fx:id="HOME_PLAYER_9_NAME" alignment="CENTER" layoutX="10.0" layoutY="223.0" maxWidth="215.0" minWidth="215.0" prefHeight="25.0" prefWidth="215.0" GridPane.rowIndex="8" />
+                  <TextField fx:id="HOME_PLAYER_10_NAME" alignment="CENTER" layoutX="10.0" layoutY="253.0" maxWidth="215.0" minWidth="215.0" prefHeight="25.0" prefWidth="215.0" GridPane.rowIndex="9" />
+                  <TextField fx:id="HOME_PLAYER_11_NAME" alignment="CENTER" layoutX="10.0" layoutY="283.0" maxWidth="215.0" minWidth="215.0" prefWidth="215.0" GridPane.rowIndex="10" />
+                  <TextField fx:id="HOME_PLAYER_12_NAME" alignment="CENTER" layoutX="10.0" layoutY="313.0" maxWidth="215.0" minWidth="215.0" prefHeight="25.0" prefWidth="215.0" GridPane.rowIndex="11" />
+                  <TextField fx:id="HOME_PLAYER_2_NUMBER" alignment="CENTER" maxWidth="70.0" minWidth="70.0" prefHeight="25.0" prefWidth="70.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="3.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="HOME_PLAYER_3_NUMBER" alignment="CENTER" layoutX="10.0" layoutY="13.0" maxWidth="70.0" minWidth="70.0" prefHeight="25.0" prefWidth="70.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="3.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="HOME_PLAYER_4_NUMBER" alignment="CENTER" layoutX="190.0" layoutY="43.0" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="3.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="HOME_PLAYER_5_NUMBER" alignment="CENTER" layoutX="190.0" layoutY="103.0" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="3.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="HOME_PLAYER_6_NUMBER" alignment="CENTER" layoutX="190.0" layoutY="133.0" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets left="3.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="HOME_PLAYER_7_NUMBER" alignment="CENTER" layoutX="190.0" layoutY="163.0" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <GridPane.margin>
+                        <Insets left="3.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="HOME_PLAYER_8_NUMBER" alignment="CENTER" layoutX="190.0" layoutY="193.0" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                     <GridPane.margin>
+                        <Insets left="3.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="HOME_PLAYER_9_NUMBER" alignment="CENTER" layoutX="190.0" layoutY="223.0" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                     <GridPane.margin>
+                        <Insets left="3.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="HOME_PLAYER_10_NUMBER" alignment="CENTER" layoutX="190.0" layoutY="253.0" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                     <GridPane.margin>
+                        <Insets left="3.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="HOME_PLAYER_11_NUMBER" alignment="CENTER" layoutX="190.0" layoutY="283.0" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                     <GridPane.margin>
+                        <Insets left="3.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="HOME_PLAYER_12_NUMBER" alignment="CENTER" layoutX="190.0" layoutY="313.0" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" GridPane.columnIndex="1" GridPane.rowIndex="11">
+                     <GridPane.margin>
+                        <Insets left="3.0" />
+                     </GridPane.margin></TextField>
+               </children>
+            </GridPane>
+            <GridPane maxHeight="385.0" maxWidth="298.0" minHeight="385.0" minWidth="298.0" prefHeight="385.0" prefWidth="298.0">
+               <columnConstraints>
+                  <ColumnConstraints fillWidth="false" halignment="RIGHT" hgrow="SOMETIMES" maxWidth="65.0" minWidth="65.0" prefWidth="65.0" />
+                  <ColumnConstraints fillWidth="false" halignment="LEFT" hgrow="SOMETIMES" maxWidth="221.0" minWidth="221.0" prefWidth="221.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextField fx:id="AWAY_PLAYER_1_NUMBER" alignment="CENTER" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" GridPane.halignment="LEFT">
+                     <GridPane.margin>
+                        <Insets left="4.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="AWAY_PLAYER_1_NAME" alignment="CENTER" maxWidth="215.0" minWidth="215.0" prefHeight="25.0" prefWidth="215.0" GridPane.columnIndex="1" GridPane.halignment="LEFT">
+                     <GridPane.margin>
+                        <Insets left="12.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="AWAY_PLAYER_2_NUMBER" alignment="CENTER" layoutX="10.0" layoutY="13.0" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="4.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="AWAY_PLAYER_3_NUMBER" alignment="CENTER" layoutX="10.0" layoutY="43.0" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" GridPane.halignment="LEFT" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="4.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="AWAY_PLAYER_4_NUMBER" alignment="CENTER" layoutX="10.0" layoutY="73.0" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" GridPane.halignment="LEFT" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="4.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="AWAY_PLAYER_5_NUMBER" alignment="CENTER" layoutX="10.0" layoutY="103.0" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" GridPane.halignment="LEFT" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="4.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="AWAY_PLAYER_6_NUMBER" alignment="CENTER" layoutX="10.0" layoutY="133.0" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" GridPane.halignment="LEFT" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets left="4.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="AWAY_PLAYER_7_NUMBER" alignment="CENTER" layoutX="10.0" layoutY="163.0" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" GridPane.halignment="LEFT" GridPane.rowIndex="6">
+                     <GridPane.margin>
+                        <Insets left="4.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="AWAY_PLAYER_8_NUMBER" alignment="CENTER" layoutX="10.0" layoutY="193.0" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" GridPane.halignment="LEFT" GridPane.rowIndex="7">
+                     <GridPane.margin>
+                        <Insets left="4.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="AWAY_PLAYER_9_NUMBER" alignment="CENTER" layoutX="10.0" layoutY="223.0" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" GridPane.halignment="LEFT" GridPane.rowIndex="8">
+                     <GridPane.margin>
+                        <Insets left="4.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="AWAY_PLAYER_10_NUMBER" alignment="CENTER" layoutX="10.0" layoutY="253.0" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" GridPane.halignment="LEFT" GridPane.rowIndex="9">
+                     <GridPane.margin>
+                        <Insets left="4.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="AWAY_PLAYER_11_NUMBER" alignment="CENTER" layoutX="10.0" layoutY="283.0" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" GridPane.halignment="LEFT" GridPane.rowIndex="10">
+                     <GridPane.margin>
+                        <Insets left="4.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="AWAY_PLAYER_12_NUMBER" alignment="CENTER" layoutX="10.0" layoutY="313.0" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" GridPane.halignment="LEFT" GridPane.rowIndex="11">
+                     <GridPane.margin>
+                        <Insets left="4.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="AWAY_PLAYER_2_NAME" alignment="CENTER" layoutX="190.0" layoutY="13.0" maxWidth="215.0" minWidth="215.0" prefWidth="215.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="12.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="AWAY_PLAYER_3_NAME" alignment="CENTER" layoutX="10.0" layoutY="13.0" maxWidth="215.0" minWidth="215.0" prefWidth="215.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="12.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="AWAY_PLAYER_4_NAME" alignment="CENTER" layoutX="190.0" layoutY="43.0" maxWidth="215.0" minWidth="215.0" prefWidth="215.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="12.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="AWAY_PLAYER_5_NAME" alignment="CENTER" layoutX="190.0" layoutY="103.0" maxWidth="215.0" minWidth="215.0" prefWidth="215.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="12.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="AWAY_PLAYER_6_NAME" alignment="CENTER" layoutX="190.0" layoutY="133.0" maxWidth="215.0" minWidth="215.0" prefWidth="215.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets left="12.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="AWAY_PLAYER_7_NAME" alignment="CENTER" layoutX="190.0" layoutY="163.0" maxWidth="215.0" minWidth="215.0" prefHeight="25.0" prefWidth="215.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="6">
+                     <GridPane.margin>
+                        <Insets left="12.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="AWAY_PLAYER_8_NAME" alignment="CENTER" layoutX="190.0" layoutY="193.0" maxWidth="215.0" minWidth="215.0" prefWidth="215.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="7">
+                     <GridPane.margin>
+                        <Insets left="12.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="AWAY_PLAYER_9_NAME" alignment="CENTER" layoutX="190.0" layoutY="223.0" maxWidth="215.0" minWidth="215.0" prefWidth="215.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="8">
+                     <GridPane.margin>
+                        <Insets left="12.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="AWAY_PLAYER_10_NAME" alignment="CENTER" layoutX="190.0" layoutY="253.0" maxWidth="215.0" minWidth="215.0" prefWidth="215.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="9">
+                     <GridPane.margin>
+                        <Insets left="12.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="AWAY_PLAYER_11_NAME" alignment="CENTER" layoutX="190.0" layoutY="283.0" maxWidth="215.0" minWidth="215.0" prefWidth="215.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="10">
+                     <GridPane.margin>
+                        <Insets left="12.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="AWAY_PLAYER_12_NAME" alignment="CENTER" layoutX="190.0" layoutY="313.0" maxWidth="215.0" minWidth="215.0" prefWidth="215.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="11">
+                     <GridPane.margin>
+                        <Insets left="12.0" />
+                     </GridPane.margin></TextField>
+               </children>
+            </GridPane>
+         </items>
+      </SplitPane>
+      <HBox alignment="CENTER" fillHeight="false" layoutX="152.0" layoutY="285.0" prefHeight="46.0" prefWidth="500.0" spacing="210.0">
+         <children>
+            <Label text="Kotijoukkue">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label text="Vierasjoukkue">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children></HBox>
+      <BorderPane fx:id="HOME_LOGO" layoutX="147.0" layoutY="44.0" maxHeight="200.0" maxWidth="200.0" onDragDropped="#setOnDragDroppedH" onDragExited="#dragExitH" onDragOver="#setOnDragOverH" prefHeight="200.0" prefWidth="200.0">
+         <center>
+            <StackPane fx:id="homeLogo" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: lightgray;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Drop a logo image here" />
+               </children></StackPane>
+         </center></BorderPane>
+      <BorderPane fx:id="AWAY_LOGO" layoutX="456.0" layoutY="44.0" maxHeight="200.0" maxWidth="200.0" onDragDropped="#setOnDragDroppedA" onDragExited="#dragExitA" onDragOver="#setOnDragOverA" prefHeight="200.0" prefWidth="200.0">
+         <center>
+            <StackPane fx:id="awayLogo" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: lightgray;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Drop a logo image here" />
+               </children></StackPane>
+         </center></BorderPane>
+      <TextField fx:id="HOME_NAME" layoutX="173.0" layoutY="260.0" />
+      <TextField fx:id="AWAY_NAME" layoutX="482.0" layoutY="260.0" />
+   </children>
+</AnchorPane>

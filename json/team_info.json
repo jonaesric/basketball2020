@@ -1,0 +1,12 @@
+[
+  {
+    "home": true,
+    "path": "./json/joukkuelogo.png",
+    "name": "aa"
+  },
+  {
+    "home": false,
+    "path": "./json/joukkuelogo2.png",
+    "name": "cc"
+  }
+]

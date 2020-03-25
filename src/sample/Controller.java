@@ -7,6 +7,8 @@ import javafx.geometry.Rectangle2D;
 import javafx.scene.*;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.Border;
 import javafx.scene.layout.BorderImage;
 import javafx.scene.layout.BorderWidths;
@@ -27,57 +29,53 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 
 import javax.swing.*;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.LinkedList;
-import java.util.Optional;
+import java.io.*;
+import java.net.URL;
+import java.util.*;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.stream.JsonReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.Writer;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.TimerTask;
+import java.awt.image.BufferedImage;
+import java.net.MalformedURLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.application.Platform;
+import javafx.scene.image.WritableImage;
+import javax.imageio.ImageIO;
 
 public class Controller {
 
-    String FilePath = "./src/gamestate.json";
-
-    Sound sound = new Sound();
+    // FILEPATHS
+    private final static String SETTINGS_FILEPATH = "./json/settings.json";
+    private final static String PLAYERS_FILEPATH = "./json/players.json";
+    private String FilePath = "./json/gamestate.json";
+    String oldGameFilePath;
     Gson gson = new Gson();
+    Sound sound = new Sound();
     // USEFULL FOR FORMATTING TIME
     Generator generator = new Generator();
 
-    //DUMMY TEAMS
-    private Team home = new Team("hupi-ukot");
-    private Team away = new Team("hupi-akat");
+    // TEAMS
+    private Team home = new Team(TeamInfo.getTName(true));
+    private Team away = new Team(TeamInfo.getTName(false));
     private Board board = new Board(home, away);
 
-    // DUMMY PLAYER LISTS
-    String[][] home_players_info = new String[][]{new String[]{"1", "I. Seppala"}, new String[]{"2", "V. Simpson"}, new String[]{"4", "A. Diaz"}, new String[]{"6", "J. Herrala"}, new String[]{"7", "A. Perttu"},
-    new String[]{"8", "T. Huolila"}, new String[]{"9", "M. Ojala"}, new String[]{"12", "S. Vanttaja"}, new String[]{"31", "T. Palmi"}, new String[]{"32", "R. Hollis-Jefferson"},
-    new String[]{"", ""}, new String[]{"", ""}};
+    // PLAYER LISTS
+    String[][] home_players_info = homePlayersTo2DArray();
+    String[][] away_players_info = awayPlayersTo2DArray();
 
-    String[][] away_players_info = new String[][]{new String[]{"0", "T. Golden"}, new String[]{"2", "V. Zaryazhko"}, new String[]{"3", "A. Ireland"}, new String[]{"9", "A. Petenev"}, new String[]{"10", "N. Mikhailovskii"},
-    new String[]{"12", "P. Buford"}, new String[]{"14", "B. Savovic"}, new String[]{"23", "T. McLean"}, new String[]{"32", "A. Kvitkovskikh"}, new String[]{"35", "A. Zabelin"}, new String[]{"45", "D. Kravish"},
-    new String[]{"", ""}};
+    // SETTINGS
+    private Settings settings = createSettingsObject();
 
-    // DUMMY SETTINGS
-    private Settings settings = new Settings(70, 4, 10, 10, 20, 5, 3, 1, 1, 5, 1, 1, true, 10);
-
-    private LinkedList<String> player = new LinkedList<>();
+    //private LinkedList<String> player = new LinkedList<>();
     private Game GameTool = new Game(board, settings, home_players_info, away_players_info);
+
     private Timeline timeline;
     private boolean isStarted = false;
     private boolean isTimeoutAlready = false;
     private boolean onBreak = false;
+    boolean oldGame = false;
 
     // import Labels from the panel.fxml file so we can edit those.
     @FXML
@@ -110,13 +108,14 @@ public class Controller {
     private Label AWAY_PLAYER_1_NAME, AWAY_PLAYER_2_NAME, AWAY_PLAYER_3_NAME, AWAY_PLAYER_4_NAME, AWAY_PLAYER_5_NAME, AWAY_PLAYER_6_NAME, AWAY_PLAYER_7_NAME, AWAY_PLAYER_8_NAME, AWAY_PLAYER_9_NAME, AWAY_PLAYER_10_NAME, AWAY_PLAYER_11_NAME, AWAY_PLAYER_12_NAME;
     @FXML
     private Label AWAY_PLAYER_1_NUMBER, AWAY_PLAYER_2_NUMBER, AWAY_PLAYER_3_NUMBER, AWAY_PLAYER_4_NUMBER, AWAY_PLAYER_5_NUMBER, AWAY_PLAYER_6_NUMBER, AWAY_PLAYER_7_NUMBER, AWAY_PLAYER_8_NUMBER, AWAY_PLAYER_9_NUMBER, AWAY_PLAYER_10_NUMBER, AWAY_PLAYER_11_NUMBER, AWAY_PLAYER_12_NUMBER;
+    @FXML
+    private ImageView LOGO_HOME, LOGO_AWAY; // Is set on NewGame.java
 
     /**
      * Binds every Label to StringProperty of Game instance.
      */
     public void initialize() throws FileNotFoundException {
-        gameObject g = returnGameObject();
-        settings = g.settings;
+
         TIME.textProperty().bind(generator.getTimeFormat(GameTool.timeMillis, !GameTool.getPeriodInfo().isBreak(), GameTool));
 
         if (GameTool.getSettings().getKellonSuunta()) {
@@ -261,7 +260,12 @@ public class Controller {
         AWAY_PLAYER_10_NUMBER.textProperty().bind(GameTool.AWAY_PLAYER_10_NUMBER);
         AWAY_PLAYER_11_NUMBER.textProperty().bind(GameTool.AWAY_PLAYER_11_NUMBER);
         AWAY_PLAYER_12_NUMBER.textProperty().bind(GameTool.AWAY_PLAYER_12_NUMBER);
-        setGamestateFromJson(g);
+
+        if (oldGame) {
+            FilePath = oldGameFilePath;
+            gameObject g = returnGameObject();
+            setGamestateFromGameObject(g);
+        }
 
     }
 
@@ -1215,11 +1219,15 @@ public class Controller {
         long duration;
         long end;
         if (GameTool.getSettings().getKellonSuunta()) {
-            GameTool.timeMillis.setValue(GameTool.getPeriodInfo().getSeconds() * 1000L);
+            if (!oldGame) {
+              GameTool.timeMillis.setValue(GameTool.getPeriodInfo().getSeconds() * 1000L);
+            }
             duration = GameTool.timeMillis.longValue();
             end = 0;
         } else {
+             if (!oldGame) {
             GameTool.timeMillis.setValue(0L);
+             }
             duration = GameTool.getPeriodInfo().getSeconds() * 1000L - GameTool.timeMillis.longValue();
             end = GameTool.getPeriodInfo().getSeconds() * 1000L;
         }
@@ -1233,7 +1241,6 @@ public class Controller {
         timeline_ending_checks();
         TIME.textProperty().bind(generator.getTimeFormat(GameTool.timeMillis, !GameTool.getPeriodInfo().isBreak(), GameTool));
         startTimer();
-
     }
 
     /**
@@ -1394,6 +1401,149 @@ public class Controller {
         GameTool.HOME_TIMEOUTS.setValue("");
     }
 
+    public void setHomeTeamLogo() {
+        File input = new File(String.valueOf(TeamInfo.getFile(true)));
+        Image image = new Image(input.toURI().toString());
+        LOGO_HOME.setImage(image);
+    }
+
+    public void setAwayTeamLogo() {
+        File input = new File(String.valueOf(TeamInfo.getFile(false)));
+        Image image = new Image(input.toURI().toString());
+        LOGO_AWAY.setImage(image);
+    }
+
+    /**
+     * Creates settings object
+     *
+     * @return Settings
+     */
+    private Settings createSettingsObject() {
+
+        // Debug
+        System.out.println("Settings loaded to game!");
+
+        // Set the text field values
+        Gson gson = new Gson();
+        try (Reader reader = new FileReader(SETTINGS_FILEPATH)) {
+
+            // Convert JSON File to Java Object
+            SettingsString loadedSettings = gson.fromJson(reader, SettingsString.class);
+
+            return new Settings(
+                    formatTimeStringToInt(loadedSettings.getNeljanneksenPituus()),
+                    Integer.parseInt(loadedSettings.getNeljannesMaara()),
+                    formatTimeStringToInt(loadedSettings.getJatkoeraPituus()),
+                    formatTimeStringToInt(loadedSettings.getLyhytTauko()),
+                    formatTimeStringToInt(loadedSettings.getPitkaTauko()),
+                    Integer.parseInt(loadedSettings.getAikalisa()),
+                    Integer.parseInt(loadedSettings.getAikalisaLkm()),
+                    Integer.parseInt(loadedSettings.getHyokkausAika1()),
+                    Integer.parseInt(loadedSettings.getHyokkausAika2()),
+                    Integer.parseInt(loadedSettings.getVirheetLkm()),
+                    Integer.parseInt(loadedSettings.getPelikellonSummeri()),
+                    Integer.parseInt(loadedSettings.getHeittokellonSummeri()),
+                    loadedSettings.getKellonSuunta(),
+                    Integer.parseInt(loadedSettings.getWaitingBeforeStart())
+            );
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+    /**
+     * Formats time which is in format mm:ss to seconds
+     *
+     * @param time
+     * @return
+     */
+    private int formatTimeStringToInt(String time) {
+        String[] units = time.split(":"); //will break the string up into an array
+        int minutes = Integer.parseInt(units[0]); //first element
+        int seconds = Integer.parseInt(units[1]); //second element
+        return 60 * minutes + seconds;
+    }
+
+    /**
+     * Creates two dimensional array for home team players from players.json
+     *
+     * @return String[][] homePlayersInfo
+     */
+    private String[][] homePlayersTo2DArray() {
+
+        Gson gson = new Gson();
+        try (Reader reader = new FileReader(PLAYERS_FILEPATH)) {
+
+            // Convert JSON File to Java Object
+            Players players = gson.fromJson(reader, Players.class);
+
+            String[][] homePlayersInfo = new String[][]{
+                new String[]{players.homePlayers.rooster.get(0).number, players.homePlayers.rooster.get(0).name},
+                new String[]{players.homePlayers.rooster.get(1).number, players.homePlayers.rooster.get(1).name},
+                new String[]{players.homePlayers.rooster.get(2).number, players.homePlayers.rooster.get(2).name},
+                new String[]{players.homePlayers.rooster.get(3).number, players.homePlayers.rooster.get(3).name},
+                new String[]{players.homePlayers.rooster.get(4).number, players.homePlayers.rooster.get(4).name},
+                new String[]{players.homePlayers.rooster.get(5).number, players.homePlayers.rooster.get(5).name},
+                new String[]{players.homePlayers.rooster.get(6).number, players.homePlayers.rooster.get(6).name},
+                new String[]{players.homePlayers.rooster.get(7).number, players.homePlayers.rooster.get(7).name},
+                new String[]{players.homePlayers.rooster.get(8).number, players.homePlayers.rooster.get(8).name},
+                new String[]{players.homePlayers.rooster.get(9).number, players.homePlayers.rooster.get(9).name},
+                new String[]{players.homePlayers.rooster.get(10).number, players.homePlayers.rooster.get(10).name},
+                new String[]{players.homePlayers.rooster.get(11).number, players.homePlayers.rooster.get(11).name}
+            };
+
+            return homePlayersInfo;
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+    /**
+     * Creates two dimensional array for away team players from players.json
+     *
+     * @return String[][] awayPlayersInfo
+     */
+    private String[][] awayPlayersTo2DArray() {
+
+        Gson gson = new Gson();
+        try (Reader reader = new FileReader(PLAYERS_FILEPATH)) {
+
+            // Convert JSON File to Java Object
+            Players players = gson.fromJson(reader, Players.class);
+
+            String[][] awayPlayersInfo = new String[][]{
+                new String[]{players.awayPlayers.rooster.get(0).number, players.awayPlayers.rooster.get(0).name},
+                new String[]{players.awayPlayers.rooster.get(1).number, players.awayPlayers.rooster.get(1).name},
+                new String[]{players.awayPlayers.rooster.get(2).number, players.awayPlayers.rooster.get(2).name},
+                new String[]{players.awayPlayers.rooster.get(3).number, players.awayPlayers.rooster.get(3).name},
+                new String[]{players.awayPlayers.rooster.get(4).number, players.awayPlayers.rooster.get(4).name},
+                new String[]{players.awayPlayers.rooster.get(5).number, players.awayPlayers.rooster.get(5).name},
+                new String[]{players.awayPlayers.rooster.get(6).number, players.awayPlayers.rooster.get(6).name},
+                new String[]{players.awayPlayers.rooster.get(7).number, players.awayPlayers.rooster.get(7).name},
+                new String[]{players.awayPlayers.rooster.get(8).number, players.awayPlayers.rooster.get(8).name},
+                new String[]{players.awayPlayers.rooster.get(9).number, players.awayPlayers.rooster.get(9).name},
+                new String[]{players.awayPlayers.rooster.get(10).number, players.awayPlayers.rooster.get(10).name},
+                new String[]{players.awayPlayers.rooster.get(11).number, players.awayPlayers.rooster.get(11).name}
+            };
+
+            return awayPlayersInfo;
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+    /**
+     * Creates timer, that saves game to json in set interval
+     */
     public void startTimer() {
         java.util.Timer t = new java.util.Timer();
         {
@@ -1412,38 +1562,60 @@ t.scheduleAtFixedRate(tt, 10, 100);
         }
     }
 
+    /**
+     * Writes gamestate to json
+     *
+     */
     private void writeJsonGameState() {
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        GameState gameState = new GameState(GameTool);
-        ArrayList<player> HomePlayerList = new ArrayList();
-        ArrayList<player> AwayPlayerList = new ArrayList();
-        playerList away = new playerList("Away", returnPlayers(AwayPlayerList, GameTool, false));
-        playerList home = new playerList("Home", returnPlayers(HomePlayerList, GameTool, true));
-        gameObject g = new gameObject("Game", gameState, home, away, settings);
-        String game = gson.toJson(g);
-        // System.out.println(g.awayPlayers.rooster);
 
         try {
-            Writer writer = new FileWriter(FilePath);
-            writer.write(game);
-            writer.close();
-        } catch (IOException ex) {
+            Gson gson = new GsonBuilder().setPrettyPrinting().create();
+            GameState gameState = new GameState(GameTool);
+            ArrayList<player> HomePlayerList = new ArrayList();
+            ArrayList<player> AwayPlayerList = new ArrayList();
+            String homeTeamName = home.getName();
+            String awayTeamName = away.getName();
+            URL homeImagePath = new URL(LOGO_HOME.getImage().getUrl());
+            URL awayImagePath = new URL(LOGO_AWAY.getImage().getUrl());
+            playerList awayTeam = new playerList(awayTeamName, returnPlayers(AwayPlayerList, GameTool, false), homeImagePath.toString());
+            playerList homeTeam = new playerList(homeTeamName, returnPlayers(HomePlayerList, GameTool, true), awayImagePath.toString());
+            gameObject g = new gameObject("Game", gameState, homeTeam, awayTeam, settings);
+            String game = gson.toJson(g);
 
-            Logger.getLogger(GameState.class.getName()).log(Level.SEVERE, null, ex);
+            try {
+                Writer writer = new FileWriter(FilePath);
+                writer.write(game);
+                writer.close();
+            } catch (IOException ex) {
+
+                Logger.getLogger(GameState.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+        } catch (MalformedURLException ex) {
+
+            Logger.getLogger(Controller.class.getName()).log(Level.SEVERE, null, ex);
         }
 
     }
 
+    /**
+     * fetches json from file, and converts to gameObject
+     * @return gameObject data
+     */
     gameObject returnGameObject() throws FileNotFoundException {
         JsonReader reader = new JsonReader(new FileReader(FilePath));
         gameObject data = gson.fromJson(reader, gameObject.class);
         return data;
     }
 
+    /**
+     * Creates a list of players using Game to fetch their information
+     *
+     * @return ArrayList<player> team
+     */
     public ArrayList<player> returnPlayers(ArrayList<player> team, Game G, boolean isHome) {
         for (int n = 0; n < 12; n++) {
             player p = new player(G.getPlayerName(isHome, n), G.getPlayerNumber(isHome, n), G.getPlayerFouls(isHome, n), G.getPlayerPoints(isHome, n));
-
             team.add(p);
         }
 
@@ -1451,8 +1623,12 @@ t.scheduleAtFixedRate(tt, 10, 100);
 
     }
 
-    void setGamestateFromJson(gameObject g) {
-        
+    /**
+     * Sets settings, score and other relevant parameters from gameObject
+     * @return ArrayList<player> team
+     */
+    void setGamestateFromGameObject(gameObject g) {
+
         GameTool.getPeriodInfo().seconds = g.settings.getNeljanneksenPituus();
         GameTool.timeMillis.set(g.gameState.timePassed);
         settings = g.settings;
@@ -1478,11 +1654,23 @@ t.scheduleAtFixedRate(tt, 10, 100);
         GameTool.PERIOD.set(g.gameState.period);
         board.setPeriod(g.gameState.periodi);
         board.setTimeSeconds(g.settings.getNeljanneksenPituus());
-        
+        Image image = new Image(g.homePlayers.imagePath);
+        Image image2 = new Image(g.awayPlayers.imagePath);
+        try {
+            LOGO_HOME.setImage(image);
+            LOGO_AWAY.setImage(image2);
+        } catch (Exception e) {
+
+        }
+
     }
 
 }
 
+/**
+ * gameObject combines settings, gameState, home player list and away player
+ * list into one object to be saved in json
+ */
 class gameObject {
 
     String name;
@@ -1492,6 +1680,7 @@ class gameObject {
     playerList awayPlayers;
 
     gameObject(String n, GameState gamestate, playerList homePlayers, playerList awayPlayers, Settings s) {
+
         this.name = n;
         this.gameState = gamestate;
         this.homePlayers = homePlayers;
@@ -1501,12 +1690,17 @@ class gameObject {
 
 }
 
+/**
+ * Combines name of team, list of teams players and path to teamlogo
+ */
 class playerList {
 
     String name;
     List<player> rooster;
+    String imagePath;
 
-    playerList(String name, List<player> rooster) {
+    playerList(String name, List<player> rooster, String imagePath) {
+        this.imagePath = imagePath;
         this.name = name;
         this.rooster = rooster;
 

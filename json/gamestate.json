@@ -1,0 +1,185 @@
+{
+  "name": "Game",
+  "settings": {
+    "neljanneksenPituus": 600,
+    "neljannesMaara": 4,
+    "jatkoeraPituus": 300,
+    "lyhytTauko": 120,
+    "pitkaTauko": 900,
+    "aikalisa": 60,
+    "aikalisaLkm": 3,
+    "hyokkausAika1": 24,
+    "hyokkausAika2": 12,
+    "virheetLkm": 5,
+    "pelikellonSummeri": 2,
+    "heittokellonSummeri": 2,
+    "kellonSuunta": true,
+    "waitingBeforeStart": 10
+  },
+  "gameState": {
+    "timePassed": 528466,
+    "score": "35-50",
+    "homeFouls": "5",
+    "awayFouls": "5",
+    "homeTimeouts": "",
+    "awayTimeouts": "●",
+    "period": "1. PERIOD",
+    "periodi": 1
+  },
+  "homePlayers": {
+    "name": "aa",
+    "rooster": [
+      {
+        "name": "Anneli Aapinen",
+        "number": "77",
+        "fouls": "",
+        "points": "2"
+      },
+      {
+        "name": "Mega Ansa",
+        "number": "14",
+        "fouls": "",
+        "points": "2"
+      },
+      {
+        "name": "Anneli Aapinen",
+        "number": "77",
+        "fouls": "",
+        "points": "0"
+      },
+      {
+        "name": "Mega Ansa",
+        "number": "14",
+        "fouls": "",
+        "points": "3"
+      },
+      {
+        "name": "Anneli Aapinen",
+        "number": "77",
+        "fouls": "●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●",
+        "points": "2"
+      },
+      {
+        "name": "Mega Ansa",
+        "number": "14",
+        "fouls": "",
+        "points": "2"
+      },
+      {
+        "name": "Anneli Aapinen",
+        "number": "77",
+        "fouls": "",
+        "points": "4"
+      },
+      {
+        "name": "Mega Ansa",
+        "number": "14",
+        "fouls": "",
+        "points": "4"
+      },
+      {
+        "name": "Anneli Aapinen",
+        "number": "77",
+        "fouls": "",
+        "points": "6"
+      },
+      {
+        "name": "Mega Ansa",
+        "number": "14",
+        "fouls": "",
+        "points": "2"
+      },
+      {
+        "name": "Anneli Aapinen",
+        "number": "77",
+        "fouls": "",
+        "points": "5"
+      },
+      {
+        "name": "Mega Ansa",
+        "number": "14",
+        "fouls": "",
+        "points": "3"
+      }
+    ],
+    "imagePath": "file:./json/joukkuelogo.png"
+  },
+  "awayPlayers": {
+    "name": "cc",
+    "rooster": [
+      {
+        "name": "Hupi Veikko",
+        "number": "32",
+        "fouls": "",
+        "points": "11"
+      },
+      {
+        "name": "Kkontent Tero",
+        "number": "31",
+        "fouls": "●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●",
+        "points": "4"
+      },
+      {
+        "name": "Pelaaja Toinen",
+        "number": "53",
+        "fouls": "",
+        "points": "3"
+      },
+      {
+        "name": "Hupi Veikko",
+        "number": "32",
+        "fouls": "●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●",
+        "points": "2"
+      },
+      {
+        "name": "Kkontent Tero",
+        "number": "31",
+        "fouls": "●●●●●●●●●●●●●●●●●●●●",
+        "points": "0"
+      },
+      {
+        "name": "Pelaaja Toinen",
+        "number": "53",
+        "fouls": "●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●",
+        "points": "0"
+      },
+      {
+        "name": "Hupi Veikko",
+        "number": "32",
+        "fouls": "",
+        "points": "5"
+      },
+      {
+        "name": "Kkontent Tero",
+        "number": "31",
+        "fouls": "",
+        "points": "3"
+      },
+      {
+        "name": "Pelaaja Toinen",
+        "number": "53",
+        "fouls": "",
+        "points": "3"
+      },
+      {
+        "name": "Hupi Veikko",
+        "number": "32",
+        "fouls": "",
+        "points": "3"
+      },
+      {
+        "name": "Kkontent Tero",
+        "number": "31",
+        "fouls": "",
+        "points": "12"
+      },
+      {
+        "name": "Pelaaja Toinen",
+        "number": "53",
+        "fouls": "",
+        "points": "4"
+      }
+    ],
+    "imagePath": "file:./json/joukkuelogo2.png"
+  }
+}

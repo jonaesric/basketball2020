@@ -1,0 +1,108 @@
+{
+  "homePlayers": {
+    "name": "HomeTeam",
+    "rooster": [
+      {
+        "name": "Anneli Aapinen",
+        "number": "77"
+      },
+      {
+        "name": "Mega Ansa",
+        "number": "14"
+      },
+      {
+        "name": "Anneli Aapinen",
+        "number": "77"
+      },
+      {
+        "name": "Mega Ansa",
+        "number": "14"
+      },
+      {
+        "name": "Anneli Aapinen",
+        "number": "77"
+      },
+      {
+        "name": "Mega Ansa",
+        "number": "14"
+      },
+      {
+        "name": "Anneli Aapinen",
+        "number": "77"
+      },
+      {
+        "name": "Mega Ansa",
+        "number": "14"
+      },
+      {
+        "name": "Anneli Aapinen",
+        "number": "77"
+      },
+      {
+        "name": "Mega Ansa",
+        "number": "14"
+      },
+      {
+        "name": "Anneli Aapinen",
+        "number": "77"
+      },
+      {
+        "name": "Mega Ansa",
+        "number": "14"
+      }
+    ]
+  },
+  "awayPlayers": {
+    "name": "AwayTeam",
+    "rooster": [
+      {
+        "name": "Hupi Veikko",
+        "number": "32"
+      },
+      {
+        "name": "Kkontent Tero",
+        "number": "31"
+      },
+      {
+        "name": "Pelaaja Toinen",
+        "number": "53"
+      },
+      {
+        "name": "Hupi Veikko",
+        "number": "32"
+      },
+      {
+        "name": "Kkontent Tero",
+        "number": "31"
+      },
+      {
+        "name": "Pelaaja Toinen",
+        "number": "53"
+      },
+      {
+        "name": "Hupi Veikko",
+        "number": "32"
+      },
+      {
+        "name": "Kkontent Tero",
+        "number": "31"
+      },
+      {
+        "name": "Pelaaja Toinen",
+        "number": "53"
+      },
+      {
+        "name": "Hupi Veikko",
+        "number": "32"
+      },
+      {
+        "name": "Kkontent Tero",
+        "number": "31"
+      },
+      {
+        "name": "Pelaaja Toinen",
+        "number": "53"
+      }
+    ]
+  }
+}

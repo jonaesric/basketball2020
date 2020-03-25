@@ -1,0 +1,16 @@
+{
+  "neljanneksenPituus": "10:00",
+  "neljannesMaara": "4",
+  "jatkoeraPituus": "05:00",
+  "lyhytTauko": "02:00",
+  "pitkaTauko": "15:00",
+  "aikalisa": "60",
+  "aikalisaLkm": "3",
+  "hyokkausAika1": "24",
+  "hyokkausAika2": "12",
+  "virheetLkm": "5",
+  "pelikellonSummeri": "2",
+  "heittokellonSummeri": "2",
+  "kellonSuunta": true,
+  "waitingBeforeStart": "10"
+}

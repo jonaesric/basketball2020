@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ScoreboardMenuController">
+    <stylesheets>
+        <URL value="@koris.css" />
+    </stylesheets>
+    <children>
+      <Label layoutX="260.0" layoutY="62.0" prefHeight="56.0" prefWidth="280.0" text="TULOSTAULU" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <Button fx:id="loadGameBtn" layoutX="201.0" layoutY="299.0" mnemonicParsing="false" onAction="#openFileChooser" prefHeight="51.0" prefWidth="137.0" text="LATAA">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Button layoutX="462.0" layoutY="299.0" mnemonicParsing="false" onAction="#changeScreenSettingsMenuNewGameButtonPushed" prefHeight="51.0" prefWidth="137.0" text="UUSI">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Label layoutX="178.0" layoutY="246.0" prefHeight="33.0" prefWidth="183.0" text="LATAA VANHA PELI" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="439.0" layoutY="246.0" prefHeight="33.0" prefWidth="183.0" text="ALOITA UUSI PELI" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="41.0" mnemonicParsing="false" onAction="#changeScreenMainMenuButtonPushed" text="TAKAISIN">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

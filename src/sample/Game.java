@@ -3,9 +3,13 @@ package sample;
 import javafx.beans.property.*;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.Border;
 import javafx.util.Duration;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -18,7 +22,6 @@ public class Game {
     public LongProperty test;
     private String[][] home_player_par;
     private String[][] away_player_par;
-
 
 
     public Game(Board board, Settings settings, String[][] home_player_par, String[][] away_player_par){
@@ -274,6 +277,7 @@ public class Game {
 
 
 
+
     public void reset() {
         for (int i = 0; i < 12; i = i + 1) {
 
@@ -446,4 +450,5 @@ public class Game {
     public void setScore(String s) {
         this.SCORE.setValue(s);
     }
+
 }
